@@ -1,0 +1,106 @@
+#first-screen{
+    background: url("../img/first-bg.png");
+    background-size: cover;
+    height: 101.2vh;
+    margin: -101px 0 0 0;
+    .main-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 75vh;     
+        //padding-top: 359px;
+        h1{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 120px;
+            letter-spacing: 0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        h3{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 24px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    .main-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;     
+    }
+}
+
+#scrl-dwn{
+    background-color: transparent;
+    border: none;
+    max-width: 130px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #FFF;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    svg{
+        margin: 20px 0 0 0;        
+    }
+    //padding-top: 290px;
+}
+
+@media (max-width: 1400px) {
+    #first-screen{
+        .main-info{
+            height: 73vh;       
+        }
+    }
+    #scrl-dwn{
+        svg{
+            margin: 10px 0 0 0;
+        }
+
+    }
+}
+@media (max-width: 1200px) {
+    #first-screen{
+        .main-info{
+            height: 70vh;       
+        }
+    }
+}
+@media (max-width: 992px){
+    #first-screen{
+        height: 100vh;
+        margin: 0;
+    }
+}
+
+@media (min-width: 10px) and (max-width: 576px) {
+    #first-screen{
+        .main-info{
+            h1{
+                font-size: 60px;
+            }
+            h3{
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 15px;
+                padding-left: 15px;
+            }
+        }
+        #scrl-dwn{
+            max-width:160px;
+            width:160px;
+        }
+    }
+}

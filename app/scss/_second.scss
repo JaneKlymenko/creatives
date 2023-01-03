@@ -1,0 +1,74 @@
+#second-screen{
+    background-color: rgba(36, 0, 0, 1)!important;
+    height: 100vh;
+    h2{
+        text-align: center;
+        padding: 23vh 0 18vh 0;
+        background: url("../img/w-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        
+        .card{
+            border: none;
+            padding: 40px 30px 40px 30px;
+            max-width: 330px;
+            margin: 0 0 40px 0;
+            text-align: center;
+            img{
+                width: 120px;
+                height: 120px;
+            }
+            h4{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 0;
+                text-transform: uppercase;
+                margin: 50px 0 10px 0;
+            }
+            p{
+                font-family: 'Open Sans', sans-serif;
+                font-size: 16px;
+                line-height: 25px;
+
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    #second-screen{
+        h2{
+            padding: 20vh 0 15vh 0;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    #second-screen{
+        height: auto;
+        h2{
+            padding: 18vh 0 13vh 0;
+        }
+        .cards{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+
+}
+@media (max-width: 992px) {
+    #second-screen{
+        h2{
+            padding: 16vh 0 11vh 0;
+        }
+    }
+
+}
